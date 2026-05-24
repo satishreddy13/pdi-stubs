@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>pentaho-kettle</groupId>
+  <artifactId>pdi-stubs</artifactId>
+  <version>9.4.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>PDI Compile-Only Stubs</name>
+  <description>
+    Minimal stub implementations of the PDI API needed to compile plugin code.
+    These are compile-only; the plugin is deployed against a real PDI installation.
+  </description>
+
+  <properties>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <stub.version>9.4.0.0-SNAPSHOT</stub.version>
+  </properties>
+
+  <modules>
+    <module>kettle-core-stub</module>
+    <module>kettle-engine-stub</module>
+    <module>kettle-ui-swt-stub</module>
+    <module>metastore-stub</module>
+  </modules>
+
+</project>
