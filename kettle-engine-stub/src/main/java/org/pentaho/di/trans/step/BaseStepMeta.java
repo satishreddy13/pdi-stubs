@@ -1,5 +1,5 @@
 package org.pentaho.di.trans.step;
-public abstract class BaseStepMeta implements StepMetaInterface {
+public abstract class BaseStepMeta implements StepMetaInterface, Cloneable {
     private boolean changed = false;
     public boolean hasChanged() { return changed; }
     public void setChanged(boolean changed) { this.changed = changed; }
